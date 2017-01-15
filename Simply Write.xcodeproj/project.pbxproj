@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510DF6D01E1689F3008454E5 /* Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510DF6CF1E1689F3008454E5 /* Setup.swift */; };
+		51472B271E13BF91008EF0F2 /* Motivational.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51472B261E13BF91008EF0F2 /* Motivational.swift */; };
+		51472B291E13CA45008EF0F2 /* Manage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51472B281E13CA45008EF0F2 /* Manage.swift */; };
+		51472B2B1E13CF9F008EF0F2 /* slidingAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51472B2A1E13CF9F008EF0F2 /* slidingAnimation.swift */; };
+		51472B2D1E13D436008EF0F2 /* internals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51472B2C1E13D436008EF0F2 /* internals.swift */; };
+		51472B2F1E14B5AC008EF0F2 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51472B2E1E14B5AC008EF0F2 /* Entry.swift */; };
 		515D44981E0E07F40080FE68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515D44971E0E07F40080FE68 /* AppDelegate.swift */; };
-		515D449A1E0E07F40080FE68 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515D44991E0E07F40080FE68 /* ViewController.swift */; };
-		515D449D1E0E07F40080FE68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515D449B1E0E07F40080FE68 /* Main.storyboard */; };
+		515D449A1E0E07F40080FE68 /* LockedCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515D44991E0E07F40080FE68 /* LockedCounter.swift */; };
 		515D44A01E0E07F40080FE68 /* Simply_Write.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 515D449E1E0E07F40080FE68 /* Simply_Write.xcdatamodeld */; };
 		515D44A21E0E07F40080FE68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 515D44A11E0E07F40080FE68 /* Assets.xcassets */; };
 		515D44A51E0E07F40080FE68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515D44A31E0E07F40080FE68 /* LaunchScreen.storyboard */; };
 		515D44B01E0E07F40080FE68 /* Simply_WriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515D44AF1E0E07F40080FE68 /* Simply_WriteTests.swift */; };
 		515D44BB1E0E07F40080FE68 /* Simply_WriteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515D44BA1E0E07F40080FE68 /* Simply_WriteUITests.swift */; };
+		515D44CA1E0E102F0080FE68 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 515D44C81E0E102F0080FE68 /* Main.storyboard */; };
+		5161184B1E0F7EF40082603C /* Spring in Resources */ = {isa = PBXBuildFile; fileRef = 5161184A1E0F7EF40082603C /* Spring */; };
+		51FDF3161E1EFB4F001C1E01 /* slideOverRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDF3151E1EFB4F001C1E01 /* slideOverRight.swift */; };
+		51FDF3181E1EFB88001C1E01 /* slideOverLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDF3171E1EFB88001C1E01 /* slideOverLeft.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +43,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		515688AC1E1DB0EE008208D6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		510DF6CF1E1689F3008454E5 /* Setup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Setup.swift; sourceTree = "<group>"; };
+		51472B261E13BF91008EF0F2 /* Motivational.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motivational.swift; sourceTree = "<group>"; };
+		51472B281E13CA45008EF0F2 /* Manage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manage.swift; sourceTree = "<group>"; };
+		51472B2A1E13CF9F008EF0F2 /* slidingAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slidingAnimation.swift; sourceTree = "<group>"; };
+		51472B2C1E13D436008EF0F2 /* internals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = internals.swift; sourceTree = "<group>"; };
+		51472B2E1E14B5AC008EF0F2 /* Entry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
 		515D44941E0E07F40080FE68 /* Simply Write.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simply Write.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		515D44971E0E07F40080FE68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		515D44991E0E07F40080FE68 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		515D449C1E0E07F40080FE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		515D44991E0E07F40080FE68 /* LockedCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockedCounter.swift; sourceTree = "<group>"; };
 		515D449F1E0E07F40080FE68 /* Simply_Write.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Simply_Write.xcdatamodel; sourceTree = "<group>"; };
 		515D44A11E0E07F40080FE68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		515D44A41E0E07F40080FE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +76,10 @@
 		515D44B61E0E07F40080FE68 /* Simply WriteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Simply WriteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		515D44BA1E0E07F40080FE68 /* Simply_WriteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simply_WriteUITests.swift; sourceTree = "<group>"; };
 		515D44BC1E0E07F40080FE68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		515D44C91E0E102F0080FE68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5161184A1E0F7EF40082603C /* Spring */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Spring; sourceTree = "<group>"; };
+		51FDF3151E1EFB4F001C1E01 /* slideOverRight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slideOverRight.swift; sourceTree = "<group>"; };
+		51FDF3171E1EFB88001C1E01 /* slideOverLeft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = slideOverLeft.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +131,21 @@
 			isa = PBXGroup;
 			children = (
 				515D44971E0E07F40080FE68 /* AppDelegate.swift */,
-				515D44991E0E07F40080FE68 /* ViewController.swift */,
-				515D449B1E0E07F40080FE68 /* Main.storyboard */,
+				51472B2E1E14B5AC008EF0F2 /* Entry.swift */,
+				515D44991E0E07F40080FE68 /* LockedCounter.swift */,
+				51472B261E13BF91008EF0F2 /* Motivational.swift */,
+				51472B281E13CA45008EF0F2 /* Manage.swift */,
+				515D44C81E0E102F0080FE68 /* Main.storyboard */,
+				510DF6CF1E1689F3008454E5 /* Setup.swift */,
+				51472B2A1E13CF9F008EF0F2 /* slidingAnimation.swift */,
+				5161184A1E0F7EF40082603C /* Spring */,
 				515D44A11E0E07F40080FE68 /* Assets.xcassets */,
 				515D44A31E0E07F40080FE68 /* LaunchScreen.storyboard */,
 				515D44A61E0E07F40080FE68 /* Info.plist */,
 				515D449E1E0E07F40080FE68 /* Simply_Write.xcdatamodeld */,
+				51472B2C1E13D436008EF0F2 /* internals.swift */,
+				51FDF3151E1EFB4F001C1E01 /* slideOverRight.swift */,
+				51FDF3171E1EFB88001C1E01 /* slideOverLeft.swift */,
 			);
 			path = "Simply Write";
 			sourceTree = "<group>";
@@ -138,6 +178,7 @@
 				515D44901E0E07F30080FE68 /* Sources */,
 				515D44911E0E07F30080FE68 /* Frameworks */,
 				515D44921E0E07F30080FE68 /* Resources */,
+				515688AC1E1DB0EE008208D6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,9 +279,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515D44CA1E0E102F0080FE68 /* Main.storyboard in Resources */,
+				5161184B1E0F7EF40082603C /* Spring in Resources */,
 				515D44A51E0E07F40080FE68 /* LaunchScreen.storyboard in Resources */,
 				515D44A21E0E07F40080FE68 /* Assets.xcassets in Resources */,
-				515D449D1E0E07F40080FE68 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,9 +307,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51472B2F1E14B5AC008EF0F2 /* Entry.swift in Sources */,
+				51472B2D1E13D436008EF0F2 /* internals.swift in Sources */,
+				51472B271E13BF91008EF0F2 /* Motivational.swift in Sources */,
+				51FDF3181E1EFB88001C1E01 /* slideOverLeft.swift in Sources */,
 				515D44A01E0E07F40080FE68 /* Simply_Write.xcdatamodeld in Sources */,
-				515D449A1E0E07F40080FE68 /* ViewController.swift in Sources */,
+				515D449A1E0E07F40080FE68 /* LockedCounter.swift in Sources */,
+				51472B291E13CA45008EF0F2 /* Manage.swift in Sources */,
 				515D44981E0E07F40080FE68 /* AppDelegate.swift in Sources */,
+				510DF6D01E1689F3008454E5 /* Setup.swift in Sources */,
+				51FDF3161E1EFB4F001C1E01 /* slideOverRight.swift in Sources */,
+				51472B2B1E13CF9F008EF0F2 /* slidingAnimation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,20 +353,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		515D449B1E0E07F40080FE68 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				515D449C1E0E07F40080FE68 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		515D44A31E0E07F40080FE68 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				515D44A41E0E07F40080FE68 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		515D44C81E0E102F0080FE68 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				515D44C91E0E102F0080FE68 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -418,6 +468,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 37CTMDB34Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Simply\\ Write",
+					"$(PROJECT_DIR)/Simply\\ Write",
+				);
 				INFOPLIST_FILE = "Simply Write/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adam.Simply-Write";
@@ -431,6 +486,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 37CTMDB34Z;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Simply\\ Write",
+					"$(PROJECT_DIR)/Simply\\ Write",
+				);
 				INFOPLIST_FILE = "Simply Write/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adam.Simply-Write";
@@ -516,6 +576,7 @@
 				515D44C11E0E07F40080FE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		515D44C21E0E07F40080FE68 /* Build configuration list for PBXNativeTarget "Simply WriteTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +585,7 @@
 				515D44C41E0E07F40080FE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		515D44C51E0E07F40080FE68 /* Build configuration list for PBXNativeTarget "Simply WriteUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +594,7 @@
 				515D44C71E0E07F40080FE68 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

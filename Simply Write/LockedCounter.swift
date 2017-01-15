@@ -15,16 +15,20 @@ let storedData = UserDefaults.standard
 
 class LockedCounter: UIViewController {
    var streak = storedData.integer(forKey: "streak")
+   var wordsRecordedStore = storedData.integer(forKey: "totalWords")
+   var wordGoal = storedData.integer(forKey: "wordGoal")
    
    override func viewDidLoad() {
       print("Loaded Locked Screen")
-      goalLabel.text = "\(storedData.integer(forKey: "wordGoal"))"
-      streakCounter.text = "\(storedData.integer(forKey: "streak")) DAY STREAK"
+      goalLabel.text = "\(wordGoal)"
+      streakCounter.text = "\(streak) DAY STREAK"
+      wordsRecorded.text = "\(wordsRecordedStore) words recorded"
    }
 
    
    @IBOutlet weak var streakCounter: UILabel!
    @IBOutlet weak var goalLabel: UILabel!
+   @IBOutlet weak var wordsRecorded: UILabel!
    
    
    @IBOutlet weak var completeButton: UIButton!
@@ -39,6 +43,7 @@ class LockedCounter: UIViewController {
       }, completion: { (Bool) -> () in
          storedData.setValue(true, forKey: "goalAchievedToday")
          storedData.setValue(self.streak + 1, forKey: "streak")
+         storedData.setValue(self.wordsRecordedStore + self.wordGoal, forKey: "totalWords")
          self.performSegue(withIdentifier: "toMotivational", sender: nil)
       })
    }

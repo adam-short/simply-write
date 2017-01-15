@@ -346,15 +346,12 @@ Keep it up!</string>
                                     <constraint firstAttribute="width" constant="25" id="gXT-F4-KXh"/>
                                 </constraints>
                                 <state key="normal" image="clear"/>
-                                <connections>
-                                    <action selector="closeScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="znk-qg-Hvd"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npo-7p-G8I">
                                 <rect key="frame" x="159" y="25" width="56" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="RY9-xR-mEw" kind="show" identifier="finishAccountManagement" customClass="transitionFromLeft" customModule="Simply_Write" customModuleProvider="target" id="jyV-oF-aKZ"/>
+                                    <action selector="closeScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0rt-18-9iD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -409,6 +406,8 @@ Keep it up!</string>
                         <outlet property="words500" destination="KrI-Iv-PJr" id="5yh-nj-G2B"/>
                         <outlet property="words750" destination="aAS-dk-lpO" id="fY0-gb-Bru"/>
                         <outlet property="words900" destination="chs-mh-Y3S" id="KF2-pw-SD0"/>
+                        <segue destination="4Ti-1Z-wC3" kind="custom" identifier="lockIt" customClass="transitionFromLeft" customModule="Simply_Write" id="GeL-gV-jkv"/>
+                        <segue destination="RY9-xR-mEw" kind="custom" identifier="toMotivation" customClass="transitionFromLeft" customModule="Simply_Write" id="RA9-qJ-Hco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -916,7 +915,7 @@ Keep it up!</string>
         <image name="person" width="18" height="18"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Lb1-Q7-sca"/>
+        <segue reference="RA9-qJ-Hco"/>
         <segue reference="81D-PK-Tqp"/>
     </inferredMetricsTieBreakers>
 </document>

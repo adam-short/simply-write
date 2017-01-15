@@ -16,6 +16,7 @@ class Manage: UIViewController {
    
    var currentSubscription: Double = storedData.double(forKey: "currentSubscription")
    
+   var isSwitching: Bool = false
    
    override func viewDidLoad() {
       super.viewDidLoad()
@@ -65,27 +66,34 @@ class Manage: UIViewController {
    
    func selectGoal(newReference: UIButton!) {
       
-      deactivateButton(ref: words200)
-      deactivateButton(ref: words500)
-      deactivateButton(ref: words350)
-      deactivateButton(ref: words750)
-      deactivateButton(ref: words900)
-      deactivateButton(ref: words1200)
+      let alertController = UIAlertController(title: "Resetting Streak", message: "By switching word goal, you will reset your streak.", preferredStyle: .alert)
+      alertController.addAction(UIAlertAction(title: String("Cancel"), style: .cancel, handler: nil))
+      alertController.addAction(UIAlertAction(title: String("Switch"), style: .destructive, handler: { UIAlertAction in
+         deactivateButton(ref: self.words200)
+         deactivateButton(ref: self.words500)
+         deactivateButton(ref: self.words350)
+         deactivateButton(ref: self.words750)
+         deactivateButton(ref: self.words900)
+         deactivateButton(ref: self.words1200)
+         
+         activateButton(ref: newReference)
+         self.isSwitching = true
+      }))
       
-      activateButton(ref: newReference)
+      self.present(alertController, animated: true, completion: nil)
       
    }
    
    func selectSub(newReference: UIButton!, newLabel: UILabel!) {
-      deactivateButton(ref: cost099)
-      deactivateLabel(ref: mo12)
-      
-      deactivateButton(ref: cost199)
-      deactivateLabel(ref: mo6)
-      
-      deactivateButton(ref: cost299)
-      deactivateLabel(ref: mo1)
-      
+      deactivateButton(ref: self.cost099)
+      deactivateLabel(ref: self.mo12)
+         
+      deactivateButton(ref: self.cost199)
+      deactivateLabel(ref: self.mo6)
+         
+      deactivateButton(ref: self.cost299)
+      deactivateLabel(ref: self.mo1)
+         
       activateButton(ref: newReference)
       activateLabel(ref: newLabel)
    }
@@ -164,10 +172,17 @@ class Manage: UIViewController {
    
    
    // Closing Button
-   
    @IBAction func closeScreen(_ sender: Any) {
-      
-      
+      if isSwitching {
+         OperationQueue.main.addOperation({
+            self.performSegue(withIdentifier: "lockIt", sender: self)
+         })
+      } else {
+         OperationQueue.main.addOperation({
+            self.performSegue(withIdentifier: "toMotivation", sender: self)
+         })
+      }
+
    }
    
    
@@ -176,6 +191,10 @@ class Manage: UIViewController {
    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       storedData.set(wordGoal, forKey: "wordGoal")
       storedData.set(currentSubscription, forKey: "current")
+      
+      if segue.identifier == "lockIt" {
+         storedData.set(storedData.integer(forKey: "streak")-1, forKey: "streak")
+      }
    }
 
    
